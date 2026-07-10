@@ -1,10 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="refresh" content="0; url=https://bestlife1096-cpu.github.io/app-ads.txt">
-    <title>Redirecting...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestlife TechHub | Premium Apps</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --accent: #3b82f6;
+            --text: #1f2937;
+            --bg: #f9fafb;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        header h1 { margin: 0; font-size: 2.5rem; }
+        header p { margin: 0.5rem 0 0; opacity: 0.9; font-size: 1.1rem; }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .about-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            margin-bottom: 3rem;
+        }
+        
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .app-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .app-card h3 { margin-top: 0; color: var(--primary); }
+        
+        .features {
+            font-size: 0.9rem;
+            background: #f3f4f6;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            list-style: none;
+            padding-left: 0;
+        }
+        .features li { margin-bottom: 0.25rem; }
+        .features li::before { content: "✓ "; color: green; font-weight: bold; }
+
+        .download-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            text-align: center;
+            padding: 0.75rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.2s;
+        }
+        .download-btn:hover { background: var(--primary); }
+        
+        footer { text-align: center; margin-top: 4rem; padding: 2rem; font-size: 0.9rem; color: #6b7280; border-top: 1px solid #e5e7eb; }
+    </style>
 </head>
 <body>
-    <p>Redirecting to app-ads.txt... If it doesn't load automatically, <a href="https://bestlife1096-cpu.github.io/app-ads.txt">click here</a>.</p>
+
+    <header>
+        <h1>Bestlife TechHub</h1>
+        <p>Creating Innovative & Smart Applications for Mobile Devices</p>
+    </header>
+
+    <div class="container">
+        <!-- Brand About Info -->
+        <section class="about-section">
+            <h2>About Bestlife TechHub</h2>
+            <p>Welcome to Bestlife TechHub! We specialize in building clean, intuitive, and highly functional mobile experiences. Utilizing cutting-edge technologies like Flutter along with modular app engines, we deploy robust solutions tailored to elevate lifestyle, productivity, and utility for users across the globe.</p>
+        </section>
+
+        <h2>Our Published Applications</h2>
+        <div class="apps-grid">
+
+            <!-- APP 1 -->
+            <div class="app-card">
+                <div>
+                    <h3>BestPrimes App Builder</h3>
+                    <p>BestPrimes App Builder is a powerful no-code app creation platform designed for beginners, entrepreneurs, businesses, schools, churches, and organizations. It enables users to build, customize, and publish professional Android apps without writing code, making app development simple, fast, and accessible to everyone..</p>
+                    <ul class="features">
+                        <li>Core Feature 1</li>
+                        <li>High Performance</li>
+                        <li>User Friendly UI</li>
+                    </ul>
+                </div>
+                <a href="https://play.google.com/store/apps/details?id=bestprimes.appbuilder" class="download-btn" target="_blank">Download on Play Store ▶️</a>
+            </div>
+
+            <!-- APP 2 -->
+            <div class="app-card">
+                <div>
+                    <h3>App Two Name</h3>
+                    <p>All Video Downloader is a simple and user-friendly app designed for anyone who wants to save, organize, and access online videos for offline viewing. Built for everyday users, it offers fast downloads, HD quality support, and an easy-to-use interface for managing media in one place..</p>
+                    <ul class="features">
+                        <li>Core Feature 1</li>
+                        <li>Amazing Benefits</li>
+                        <li>Offline Access</li>
+                    </ul>
+                </div>
+                <a href="https://play.google.com/store/apps/details?id=all.videodownloader1" class="download-btn" target="_blank">Download on Play Store ▶️</a>
+            </div>
+
+            <!-- You can copy/paste more app-card blocks here for all 10 apps! -->
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Bestlife TechHub. All rights reserved.</p>
+        <p><a href="./app-ads.txt" style="color: #9ca3af;">Ad Specification (app-ads.txt)</a></p>
+    </footer>
+
 </body>
 </html>
