@@ -555,6 +555,169 @@
             margin-bottom: 6px;
         }
 
+                .about-heading {
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .section-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 12px;
+            padding: 6px 11px;
+
+            color: var(--blue);
+
+            font-size: 0.72rem;
+            font-weight: 800;
+
+            letter-spacing: 2px;
+
+            border: 1px solid rgba(56,189,248,0.22);
+
+            border-radius: 999px;
+
+            background: rgba(56,189,248,0.06);
+        }
+
+        .about-intro {
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .about-description {
+            margin-top: 0;
+        }
+
+        .about-highlights {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, minmax(0, 1fr));
+
+            gap: 18px;
+
+            margin-top: 30px;
+        }
+
+        .about-card {
+            position: relative;
+
+            padding: 24px 22px;
+
+            border-radius: 20px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,0.045),
+                    rgba(255,255,255,0.018)
+                );
+
+            border: 1px solid rgba(56,189,248,0.13);
+
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.035);
+
+            transition:
+                transform 0.25s ease,
+                border-color 0.25s ease,
+                box-shadow 0.25s ease;
+
+            overflow: hidden;
+        }
+
+        .about-card::before {
+            content: "";
+
+            position: absolute;
+
+            width: 120px;
+            height: 120px;
+
+            right: -55px;
+            top: -55px;
+
+            border-radius: 50%;
+
+            background: rgba(56,189,248,0.07);
+
+            filter: blur(18px);
+
+            pointer-events: none;
+        }
+
+        .about-card:hover {
+            transform: translateY(-4px);
+
+            border-color:
+                rgba(56,189,248,0.30);
+
+            box-shadow:
+                0 12px 30px rgba(0,0,0,0.18),
+                inset 0 1px 0 rgba(255,255,255,0.05);
+        }
+
+        .about-card-icon {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            width: 46px;
+            height: 46px;
+
+            margin-bottom: 16px;
+
+            border-radius: 14px;
+
+            background:
+                rgba(56,189,248,0.09);
+
+            border:
+                1px solid rgba(56,189,248,0.18);
+
+            font-size: 1.25rem;
+        }
+
+        .about-card h3 {
+            margin: 0 0 8px;
+
+            color: #ffffff;
+
+            font-size: 1.15rem;
+        }
+
+        .about-card p {
+            margin: 0;
+
+            color: var(--text-secondary);
+
+            font-size: 0.95rem;
+
+            line-height: 1.7;
+        }
+
+        @media (max-width: 800px) {
+
+            .about-highlights {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .about-section {
+                padding: 30px 22px;
+            }
+
+            .about-card {
+                padding: 21px 19px;
+            }
+
+        }
+
         /* =========================================================
            SERVICES
            ========================================================= */
@@ -1514,30 +1677,85 @@
 
         <section class="about-section" id="about">
 
-            <h2>
-                𝗔𝗯𝗼𝘂𝘁 𝗕𝗲𝘀𝘁𝗹𝗶𝗳𝗲 𝗧𝗲𝗰𝗵𝗛𝘂𝗯 🚀
-            </h2>
+            <div class="about-heading">
+               <span class="section-eyebrow">WHO WE ARE</span>
 
-            <p>
-                Bestlife TechHub is a digital technology brand focused on
-                creating innovative mobile applications, engaging games,
-                practical digital solutions, and technology resources.
-                We help creators, businesses, and learners turn ideas into
-                practical digital experiences through modern technology,
-                education, and continuous innovation.
+                <h2>
+                    𝗔𝗯𝗼𝘂𝘁 𝗕𝗲𝘀𝘁𝗹𝗶𝗳𝗲 𝗧𝗲𝗰𝗵𝗛𝘂𝗯 🚀
+                </h2>
+            </div>
+
+            <p class="about-intro">
+                Bestlife TechHub is a digital technology brand focused on creating
+                innovative mobile applications, engaging games, practical digital
+                solutions, and technology resources.
             </p>
+
+            <p class="about-description">
+                We help creators, businesses, and learners turn ideas into practical
+                digital experiences through modern technology, education, and
+                continuous innovation. Our work brings together software development,
+                app publishing, automation, AI, digital education, and other
+                technology-focused solutions.
+            </p>
+
+            <div class="about-highlights">
+
+                <div class="about-card">
+
+                    <div class="about-card-icon">💡</div>
+
+                    <h3>Build</h3>
+
+                    <p>
+                        Create useful apps, games, websites, and digital solutions
+                        that turn ideas into practical products.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <div class="about-card-icon">🎓</div>
+
+                    <h3>Learn</h3>
+
+                    <p>
+                        Learn practical technology, digital skills, app development,
+                        publishing, automation, AI, and other useful tools.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <div class="about-card-icon">🌍</div>
+
+                    <h3>Grow</h3>
+
+                    <p>
+                        Develop digital skills, discover opportunities, and build a
+                        stronger presence in the digital world.
+                    </p>
+
+                </div>
+
+            </div>
+
 
             <div class="mission-box">
 
                 <strong>🌍 Our Mission</strong>
 
                 <span>
-                    To empower people around the world to
+                   To empower people around the world to
                     <b>Build • Learn • Earn</b> through technology,
                     creativity, digital skills, and useful digital products.
                 </span>
 
-            </div>
+           </div>
 
         </section>
 
