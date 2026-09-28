@@ -828,7 +828,7 @@
                 0 0 30px rgba(245,197,66,0.10);
         }
 
-        .service-icon {
+                 .service-icon {
             width: 60px;
             height: 60px;
 
@@ -837,8 +837,6 @@
             justify-content: center;
 
             border-radius: 18px;
-
-            font-size: 1.9rem;
 
             background:
                 linear-gradient(
@@ -852,6 +850,27 @@
             margin-bottom: 20px;
 
             box-shadow: var(--gold-glow);
+
+            overflow: hidden;
+
+            flex-shrink: 0;
+        }
+
+        .service-icon img,
+        .service-icon svg {
+            width: 32px;
+            height: 32px;
+
+            object-fit: contain;
+
+            display: block;
+
+            flex-shrink: 0;
+        }
+
+        .service-icon.brand-icon img {
+            width: 36px;
+            height: 36px;
         }
 
         .service-card h3 {
