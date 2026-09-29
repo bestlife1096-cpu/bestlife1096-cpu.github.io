@@ -1626,12 +1626,118 @@
                 font-size: 11px;
             }
         }
+           
+        /* =====================================================
+                        LEARNING HUB
+          ===================================================== */
+
+.learning-section {
+    margin-bottom: 85px;
+}
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.learning-card {
+    position: relative;
+    padding: 30px;
+    border-radius: 24px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 29, 49, 0.98),
+            rgba(7, 17, 31, 0.98)
+        );
+    border: 1px solid var(--border);
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.32);
+    overflow: hidden;
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.learning-card::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: rgba(56, 189, 248, 0.08);
+    filter: blur(10px);
+    pointer-events: none;
+}
+
+.learning-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(56, 189, 248, 0.45);
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.38),
+        0 0 28px rgba(56, 189, 248, 0.08);
+}
+
+.learning-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    border-radius: 17px;
+    background: rgba(56, 189, 248, 0.09);
+    border: 1px solid rgba(56, 189, 248, 0.20);
+    font-size: 27px;
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.learning-card h3 {
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.learning-card p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    .learning-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .learning-card {
+        padding: 24px;
+    }
+
+    .learning-card h3 {
+        font-size: 18px;
+    }
+
+    .learning-card p {
+        font-size: 13px;
+    }
+}
     </style>
 </head>
 
 <body>
 
-    <!-- =========================================================
+        <!-- =========================================================
          PREMIUM NAVIGATION
          ========================================================= -->
 
